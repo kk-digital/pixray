@@ -3,32 +3,32 @@
 # these are minimal requirements for just the VQGAN drawer
 
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.9.0+cu102
-torchvision==0.10.0+cu102
-torchtext==0.10.0
+torch==2.0.1
+torchvision==0.15.2
+torchtext==0.15.2
 
-numpy==1.19.4
+numpy==1.24.3
 tqdm==4.49.0
-matplotlib==3.3.4
+matplotlib
 braceexpand==0.1.7
 colorthief==0.2.1
 einops==0.3.2
 imageio==2.9.0
 ipython==7.28.0
-kornia==0.6.2
-omegaconf==2.1.1
-Pillow==8.3.2
+kornia
+omegaconf==2.3.0
+Pillow==9.0.0
 PyYAML==5.4.1
 scikit_learn==1.0
 scikit-image==0.18.3
-torch_optimizer==0.1.0
-torch-tools==0.1.5
+torch_optimizer
+torch-tools
 
 # can use CompVis/taming-transformers when https://github.com/CompVis/taming-transformers/pull/81 is merged
 #git+https://github.com/bfirsh/taming-transformers.git@7a6e64ee
 #git+https://github.com/openai/CLIP
 openai-clip
-taming-transformers==0.0.1
+taming-transformers
 #git+https://github.com/pvigier/perlin-numpy@6f077f8
 
 # diffvg: these are minimal requirements for just the pixeldraw / linedraw etc drawers
