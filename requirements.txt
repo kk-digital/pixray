@@ -8,14 +8,14 @@ torchvision==0.15.2
 torchtext==0.15.2
 
 numpy==1.24.3
-tqdm==4.49.0
+tqdm==4.65.0
 matplotlib
 braceexpand==0.1.7
 colorthief==0.2.1
-einops==0.3.2
+einops==0.6.1
 imageio==2.9.0
 ipython==7.28.0
-kornia
+kornia==0.7.0
 omegaconf==2.3.0
 Pillow==9.0.0
 PyYAML==5.4.1
@@ -25,11 +25,9 @@ torch_optimizer
 torch-tools
 
 # can use CompVis/taming-transformers when https://github.com/CompVis/taming-transformers/pull/81 is merged
-#git+https://github.com/bfirsh/taming-transformers.git@7a6e64ee
-#git+https://github.com/openai/CLIP
 openai-clip
 taming-transformers
-#git+https://github.com/pvigier/perlin-numpy@6f077f8
+git+https://github.com/pvigier/perlin-numpy@6f077f8
 
 # diffvg: these are minimal requirements for just the pixeldraw / linedraw etc drawers
 
@@ -45,7 +43,7 @@ lpips
 sentence_transformers
 opencv-python
 PyWavelets==1.1.1
-#git+https://github.com/fbcotter/pytorch_wavelets
+git+https://github.com/fbcotter/pytorch_wavelets
 
 # main aphantasia library
 #git+https://github.com/pixray/aphantasia@7e6b3bb
