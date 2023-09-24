@@ -29,7 +29,7 @@ torch-tools==0.1.5
 #git+https://github.com/openai/CLIP
 openai-clip
 taming-transformers==0.0.1
-git+https://github.com/pvigier/perlin-numpy@6f077f8
+#git+https://github.com/pvigier/perlin-numpy@6f077f8
 
 # diffvg: these are minimal requirements for just the pixeldraw / linedraw etc drawers
 
@@ -45,10 +45,10 @@ lpips
 sentence_transformers
 opencv-python
 PyWavelets==1.1.1
-git+https://github.com/fbcotter/pytorch_wavelets
+#git+https://github.com/fbcotter/pytorch_wavelets
 
 # main aphantasia library
-git+https://github.com/pixray/aphantasia@7e6b3bb
+#git+https://github.com/pixray/aphantasia@7e6b3bb
 
 # slip
 timm
