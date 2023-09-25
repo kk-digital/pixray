@@ -19,15 +19,15 @@ kornia==0.7.0
 omegaconf==2.3.0
 Pillow==9.0.0
 PyYAML==5.4.1
-scikit_learn==1.0
-scikit-image==0.18.3
+scikit_learn==1.3.1
+scikit-image==0.21.0
 torch_optimizer
 torch-tools
 
 # can use CompVis/taming-transformers when https://github.com/CompVis/taming-transformers/pull/81 is merged
 openai-clip
 taming-transformers
-git+https://github.com/pvigier/perlin-numpy@6f077f8
+#git+https://github.com/pvigier/perlin-numpy@6f077f8
 
 # diffvg: these are minimal requirements for just the pixeldraw / linedraw etc drawers
 
@@ -43,10 +43,10 @@ lpips
 sentence_transformers
 opencv-python
 PyWavelets==1.1.1
-git+https://github.com/fbcotter/pytorch_wavelets
+#git+https://github.com/fbcotter/pytorch_wavelets
 
 # main aphantasia library
-git+https://github.com/pixray/aphantasia@7e6b3bb
+#git+https://github.com/pixray/aphantasia@7e6b3bb
 
 # slip
 timm
