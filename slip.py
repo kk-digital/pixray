@@ -3,7 +3,7 @@
 import sys
 import os
 from collections import OrderedDict
-import CLIPTokenizer
+from transformers import CLIPTokenizer
 import torch 
 import torch.nn as nn
 from torchvision import transforms
