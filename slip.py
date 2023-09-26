@@ -3,7 +3,7 @@
 import sys
 import os
 from collections import OrderedDict
-
+import CLIPTokenizer
 import torch 
 import torch.nn as nn
 from torchvision import transforms
@@ -78,7 +78,7 @@ SLIP_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'SLIP')
 # print("APPENDING PATH ", SLIP_PATH)
 sys.path.append(SLIP_PATH)
 import models
-from tokenizer import SimpleTokenizer
+#from tokenizer import SimpleTokenizer
 import utils
 
 class SLIP_Base():
@@ -120,7 +120,7 @@ class SLIP_Base():
             transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
             ])
 
-        self.tokenizer = SimpleTokenizer()
+        self.tokenizer = CLIPTokenizer.from_pretrained("CLIP_VITL16")
 
         ckpt = torch.load(ckpt_path, map_location='cpu')
         state_dict = OrderedDict()
