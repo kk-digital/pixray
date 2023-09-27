@@ -89,7 +89,7 @@ with io.capture_output() as captured:
   %cd diffvg
   # !ls
   !git submodule update --init --recursive
-  sys.path.append("/diffvg/build/lib.linux-x86_64-cpython-310")
+  sys.path.append("/content/diffvg/build/lib.linux-x86_64-cpython-310")
 
   !python setup.py install
 
@@ -124,9 +124,9 @@ rule.style.fontSize = '30px'
 display(IPython.display.Javascript(js_code))
 
 ```
-2- Modify `/taming-transformers/taming/data/utils.py` file
+2- Modify `taming-transformers/taming/data/utils.py` file
 ```python
-%%writefile /taming-transformers/taming/data/utils.py
+%%writefile /content/taming-transformers/taming/data/utils.py
 
 import collections
 import os
