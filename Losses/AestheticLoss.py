@@ -16,7 +16,8 @@ class AestheticLoss(LossInterface):
         super().__init__(**kwargs)
         self.model_path = Path("models/ava_vit_b_16_linear.pth")
         if not self.model_path.exists():
-            wget_file("https://dazhi.art/f/ava_vit_b_16_linear.pth", self.model_path)
+            print("The link 'https://dazhi.art/f/ava_vit_b_16_linear.pth' is not valid anymore. Please check the URL.")
+            wget_file("https://dazhi.art/f/ava_vit_b_16_linear.pth", self.model_path) #https://dazhi.art/f/ava_vit_b_16_linear.pth this link is not valid anymore
     
     def parse_settings(self, args):
         layer_weights = torch.load(self.model_path)
